@@ -1,0 +1,98 @@
+<resources>
+
+    <string name="lab_version">ver 0.9.0710</string>
+    <string name="lab_copyright">Copyright© MetYue.com 2014&#8211;2016</string>
+
+    <string name="title_activity_welcome">Visualization tool</string>
+    <string name="title_activity_main">Main menu</string>
+    <string name="title_activity_measure">Measure</string>
+    <string name="title_activity_compare">Compare</string>
+    <string name="title_activity_setting">Setting</string>
+
+    <string name="txt_space">@null</string>
+
+    <string name="lab_tab_real">Material object info (Meter)</string>
+    <string name="lab_tab_visual">Visualization info</string>
+    <string name="lab_tab_result">Result</string>
+    <string name="lab_tab_list_view">Object images view</string>
+
+    <string name="lab_long">Long</string>
+    <string name="lab_width">Wide</string>
+    <string name="lab_height">High</string>
+    <string name="lab_deviation">±</string>
+    <string name="lab_unit">m</string>
+
+    <string name="lab_link_more_info"><u>More Info...</u></string>
+    <string name="lab_link_back_info"><u>Return back</u></string>
+
+    <string name="btn_camera">Taking pictures of objects</string>
+    <string name="btn_query">Search reference data</string>
+    <string name="btn_register">Registered account</string>
+    <string name="btn_logout">Exit login</string>
+
+
+    <string name="lab_result">the distance: </string>
+    <string name="lab_result_integer">0</string>
+
+    <string name="tips_exit">Once more time, will be exit</string>
+    <string name="tips_not_sd">SD device not found</string>
+    <string name="tips_create_dir">Unable to create a picture save directory</string>
+
+    <string name="main_grid_view_measure">Measure</string>
+    <string name="main_grid_view_history">History</string>
+    <string name="main_grid_view_cloud">Object of reference</string>
+    <string name="main_grid_view_setting">Setting</string>
+    <string name="main_grid_view_help">Help</string>
+    <string name="main_grid_view_home">Member Center</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="dialog_alert_measure_title">Remind</string>
+    <string name="dialog_alert_measure_content">The height and width of the object of these two elements, it is best to fill in at least one of them, of course, you can also ignore the operation, while calculating the distance to fill up.</string>
+    <string name="dialog_alert_measure_button_1_title">Cancel</string>
+    <string name="dialog_alert_measure_button_2_title">Ignore</string>
+
+    <string name="tab_setting_pattern">Sensor length and width ratio</string>
+    <string name="lab_setting_pattern_rate">Ratio of length and width</string>
+    <string name="lab_setting_pattern_rate_tips">Tip: the ratio of the industry standard length to width is fixed to 4/3, if your CCD/CMOS is a photosensitive element is square (1/1) or other proportion of words, can make changes</string>
+    <string name="tab_setting_diagonal_line">Sensor size (inch))</string>
+    <string name="lab_setting_diagonal_line">Size</string>
+    <string name="lab_setting_diagonal_line_tips">Tip: the size of the sensor is actually a long and wide ratio of the diagonal length of the rectangular 4:3 (units of inches), common 1/2.0, 1/1.8, 1/2.3</string>
+    <string name="lab_setting_diagonal_line_count">Calculate the length and width of the size (CM) as: </string>
+    <string name="tab_setting_pixel">Sensor pixel size (micron)</string>
+    <string name="tab_setting_pixel_length">Length</string>
+    <string name="tab_setting_pixel_width">Width</string>
+    <string name="lab_setting_pixel_tips">Tip: usually the length of a pixel point is the same as the width of a unit of UM.</string>
+    <string name="lab_setting_rate_space">/</string>
+    <string name="lab_setting_null_space">-</string>
+    <string name="lab_setting_null_value"> ∞ </string>
+    <string name="lab_setting_choice">Enable</string>
+    <string name="lab_setting_other">For a example: Meizu MX4 phone configuration of the camera, the choice is the SONY imx220 sensor, its size is 1/2.3 inches, pixel length of 1.2um width of 1.2um, the factor value set to 2.0 </string>
+    <string name="tab_setting_factor">Adjustment and correction</string>
+    <string name="lab_setting_factor_value">Coefficient</string>
+    <string name="lab_setting_factor_tips">Tip: adjust the value, avoid the hardware equipment factors, caused by the calculation of differences, the default is 1.0 </string>
+
+    <string name="tips_setting_error_1">Sensor size can not be empty, and the value can not be zero</string>
+    <string name="tips_setting_error_2">The length and width of the pixel of the sensor can not be empty, and the value can not be zero.</string>
+    <string name="tips_setting_error_3">Factor coefficients should not be zero, you can default to 1.0 and then adjust the adjustment</string>
+
+
+    <string name="dialog_alert_system_setting_title">Help</string>
+    <string name="dialog_alert_system_setting_content">Among the two items that are being hit, one must choose one of them, and the contents of it can not be empty. For specific parameter values, you can query configuration information.</string>
+    <string name="dialog_alert_system_setting_button_1_title">I see</string>
+    <string name="dialog_alert_system_setting_button_2_title">Do not prompt me about this again. </string>
+    <string name="dialog_alert_system_setting_title_2">Remind</string>
+    <string name="dialog_alert_system_setting_content_2">The parameters you have entered are not complete, so it will not be saved automatically.</string>
+    <string name="dialog_alert_system_setting_button_1_title_2">I know, wait a moment and then improve the information</string>
+
+    <string name="tips_compare_error_1">Unable to estimate, because the system parameter settings are not complete</string>
+    <string name="tips_compare_error_2">Unable to estimate, because the reference object or image than the data is not complete</string>
+
+    <string name="menu_compare_activity_home">Home</string>
+    <string name="menu_compare_activity_save">Save the measurement data</string>
+    <string name="menu_compare_activity_save_base">Save to local reference material library</string>
+    <string name="menu_compare_activity_save_cloud">Upload to the cloud reference material library</string>
+
+
+
+</resources>

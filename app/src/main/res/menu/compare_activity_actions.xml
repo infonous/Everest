@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+    <item
+        android:id="@+id/menu_compare_activity_home"
+        android:icon="@drawable/abc_ic_ab_back_material"
+        android:orderInCategory="90"
+        android:title="@string/menu_compare_activity_home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_compare_activity_save"
+        android:title="@string/menu_compare_activity_save"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_compare_activity_save_base"
+        android:title="@string/menu_compare_activity_save_base"
+        app:showAsAction="never" />
+    <!--<item
+        android:id="@+id/menu_compare_activity_save_cloud"
+        android:title="@string/menu_compare_activity_save_cloud"
+        app:showAsAction="never" / >-->
+</menu>

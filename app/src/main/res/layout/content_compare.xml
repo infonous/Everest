@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#fff2f2f2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ourcause.everest.activity.CompareActivity"
+    tools:showIn="@layout/activity_compare">
+
+    <!-- 真实的物体高度与宽度 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_10">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab_tab_real"
+            style="@style/TextViewStyle_Section_Title" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/lab_height"
+            style="@style/TextViewStyle_Section_Context_Label" />
+        <EditText
+            android:id="@+id/edtRealHigh"
+            android:labelFor="@+id/edtRealHigh"
+            android:inputType="numberDecimal"
+            style="@style/EditTextStyle_Section_Context_By_Right" />
+        <TextView
+            android:text="@string/lab_width"
+            style="@style/TextViewStyle_Section_Context_Label" />
+        <EditText
+            android:id="@+id/edtRealWidth"
+            android:labelFor="@+id/edtRealWidth"
+            android:inputType="numberDecimal"
+            style="@style/EditTextStyle_Section_Context_By_Right" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/lab_link_more_info"
+            style="@style/TextViewStyle_Section_Link" />
+    </LinearLayout>
+
+    <!-- 返回成像高度和宽度 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_5">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab_tab_visual"
+            style="@style/TextViewStyle_Section_Title" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/lab_height"
+            style="@style/TextViewStyle_Section_Context_Label" />
+        <EditText
+            android:id="@+id/edtVisualHigh"
+            android:labelFor="@+id/edtVisualHigh"
+            android:inputType="numberDecimal"
+            style="@style/EditTextStyle_Section_Context_By_Right" />
+        <TextView
+            android:text="@string/lab_width"
+            style="@style/TextViewStyle_Section_Context_Label" />
+        <EditText
+            android:id="@+id/edtVisualWidth"
+            android:labelFor="@+id/edtVisualWidth"
+            android:inputType="numberDecimal"
+            style="@style/EditTextStyle_Section_Context_By_Right" />
+    </LinearLayout>
+
+    <!-- 显示计算结果 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_5">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab_tab_result"
+            style="@style/TextViewStyle_Section_Title" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/labResultByHigh"
+            android:text="@string/lab_setting_null_value"
+            style="@style/TextViewStyle_Section_Context_Obvious_1" />
+        <TextView
+            android:text="@string/lab_setting_rate_space"
+            style="@style/TextViewStyle_Section_Context_Fixed_Label" />
+        <TextView
+            android:id="@+id/labResultByWide"
+            android:text="@string/lab_setting_null_value"
+            style="@style/TextViewStyle_Section_Context_Obvious_1" />
+        <TextView
+            android:text="@string/lab_unit"
+            style="@style/TextViewStyle_Section_Context_Obvious_2" />
+    </LinearLayout>
+
+    <!-- 显示图片预览 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_5">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab_tab_list_view"
+            style="@style/TextViewStyle_Section_Title" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/activity_margin_0">
+        <ImageView
+            android:id="@+id/imageViewBrowse"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/txt_space" />
+    </LinearLayout>
+
+</LinearLayout>

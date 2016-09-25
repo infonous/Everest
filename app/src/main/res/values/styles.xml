@@ -1,0 +1,133 @@
+<resources>
+
+    <!-- full screen theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <!-- NoActionBar theme -->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="TranslucentTheme" parent="AppTheme.NoActionBar"></style>
+
+
+    <!-- 大项： 内容标题 -->
+    <style name="TextViewStyle_Section_Title">
+        <item name="android:textColor">#ed8a42</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <!-- 内容的文本标题 -->
+    <style name="TextViewStyle_Section_Context_Label">
+        <item name="android:textColor">#565656</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <!-- 提示性文本 1 -->
+    <style name="TextViewStyle_Section_Context_Tips_1">
+        <item name="android:textColor">#cacaca</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <!-- 提示性文本 2 -->
+    <style name="TextViewStyle_Section_Context_Tips_2">
+        <item name="android:textColor">#4ec83b</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <!-- 固定性文本， 如： “/” 字符 -->
+    <style name="TextViewStyle_Section_Context_Fixed_Label">
+        <item name="android:textColor">#565656</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">12dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- 超链接文本 -->
+    <style name="TextViewStyle_Section_Link">
+        <item name="android:textColor">#565656</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:autoLink">all</item>
+    </style>
+
+    <!-- 警示性文本 1  -->
+    <style name="TextViewStyle_Section_Context_Obvious_1">
+        <item name="android:textColor">#ec1d25</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!-- 警示性文本 2  -->
+    <style name="TextViewStyle_Section_Context_Obvious_2">
+        <item name="android:textColor">#565656</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- 后对齐的数值编辑框 -->
+    <style name="EditTextStyle_Section_Context_By_Right">
+        <item name="android:textColor">#565656</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+
+</resources>

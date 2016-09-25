@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">村花测距</string>
+
+    <string name="lab_version">ver 0.9.0710</string>
+    <string name="lab_copyright">Copyright© MetYue.com 2014&#8211;2016</string>
+
+    <string name="title_activity_welcome">村花测距</string>
+    <string name="title_activity_main">村花测距</string>
+    <string name="title_activity_measure">测量图像中目标尺寸</string>
+    <string name="title_activity_compare">计算实物的距离</string>
+    <string name="title_activity_setting">设置</string>
+
+    <string name="txt_space">@null</string>
+
+    <string name="lab_tab_real">实物资料(米)</string>
+    <string name="lab_tab_visual">目测参数</string>
+    <string name="lab_tab_list_view">目标图片</string>
+    <string name="lab_tab_result">计算结果</string>
+
+    <string name="lab_long">长</string>
+    <string name="lab_width">宽</string>
+    <string name="lab_height">高</string>
+    <string name="lab_deviation">±</string>
+    <string name="lab_unit">米</string>
+
+    <string name="lab_link_more_info"><u>详细资料</u></string>
+    <string name="lab_link_back_info"><u>返回</u></string>
+
+    <string name="btn_camera">对目标物件拍照</string>
+    <string name="btn_query">搜索参照物资料</string>
+    <string name="btn_register">注册帐号</string>
+    <string name="btn_logout">退出登录</string>
+
+    <string name="lab_result">两者距离: </string>
+    <string name="lab_result_integer">0</string>
+
+    <string name="tips_exit">再按一次退出应用</string>
+    <string name="tips_not_sd">没有找到 SD 设备</string>
+    <string name="tips_create_dir">无法创建图片保存目录</string>
+
+    <string name="main_grid_view_measure">拍照测距</string>
+    <string name="main_grid_view_history">历史记录</string>
+    <string name="main_grid_view_cloud">参照物云库</string>
+    <string name="main_grid_view_setting">参数设置</string>
+    <string name="main_grid_view_help">帮助文档</string>
+    <string name="main_grid_view_home">会员资料</string>
+
+    <string name="dialog_alert_measure_title">提醒</string>
+    <string name="dialog_alert_measure_content">物体的高度和宽度这两项内容之中， 最好是至少填写其中的一项， 当然您也可以在作忽略操作， 稍候在计算距离时再补充填上。</string>
+    <string name="dialog_alert_measure_button_1_title">取消</string>
+    <string name="dialog_alert_measure_button_2_title">忽略</string>
+
+    <string name="tab_setting_pattern">传感器长宽比例</string>
+    <string name="lab_setting_pattern_rate">长宽比</string>
+    <string name="lab_setting_pattern_rate_tips">提示：按行业标准长宽之比是固定为 4/3 的， 如果你的 CCD/CMOS 感光元件是正方形 (1/1) 或其它比例的话， 可自行作修改</string>
+    <string name="tab_setting_diagonal_line">传感器尺寸(英寸)</string>
+    <string name="lab_setting_diagonal_line">尺寸</string>
+    <string name="lab_setting_diagonal_line_tips">提示：传感器尺寸实际上是长宽之比为 4：3 的矩形的对角线长度（单位为英寸）， 常见的有 1/2.0、1/1.8、1/2.3</string>
+    <string name="lab_setting_diagonal_line_count">推算其长度、宽度的大小(毫米 mm)为：</string>
+    <string name="tab_setting_pixel">传感器像素点大小(微米)</string>
+    <string name="tab_setting_pixel_length">长度</string>
+    <string name="tab_setting_pixel_width">宽度</string>
+    <string name="lab_setting_pixel_tips">提示：通常一像素点的长度与宽度是一样的，单位为微米(um)</string>
+    <string name="lab_setting_rate_space">/</string>
+    <string name="lab_setting_null_space">-</string>
+    <string name="lab_setting_null_value">∞</string>
+    <string name="lab_setting_choice">启用</string>
+    <string name="lab_setting_other">例子：魅族 Meizu mx4 手机所配置的摄像机, 选用的是索尼 imx220 传感器，其尺寸是 1/2.3 英寸，像素点长度为 1.2 微米, 宽度为 1.2 微米, 因子系数值设置为 2.0 </string>
+    <string name="tab_setting_factor">调节校正</string>
+    <string name="lab_setting_factor_value">因子系数</string>
+    <string name="lab_setting_factor_tips">提示：自行调整校正此数值， 避免因硬件设备因素， 所造成的计算差异， 如空则默认为 1.0 </string>
+
+    <string name="tips_setting_error_1">传感器尺寸不能为空， 且数值不能为零</string>
+    <string name="tips_setting_error_2">传感器的像素点长度和宽度不能为空， 且数值不能为零</string>
+    <string name="tips_setting_error_3">因子系数不应该为零， 可以默认为 1.0 再自行校正调整</string>
+
+    <string name="dialog_alert_system_setting_title">帮助</string>
+    <string name="dialog_alert_system_setting_content">传感器尺寸(英寸) 与 传感器像素点大小(微米) 这两大项的参数内容， 请选择或启用其中的一项， 并且完整地填写参数内容。 对于具体的参数值， 您可以查询手机的配置信息。</string>
+    <string name="dialog_alert_system_setting_button_1_title">我知道了</string>
+    <string name="dialog_alert_system_setting_button_2_title">以后不再提示</string>
+    <string name="dialog_alert_system_setting_title_2">提醒</string>
+    <string name="dialog_alert_system_setting_content_2">您所输入的参数内容不完整， 所以不会自动保存， 稍候你可以重新设置。</string>
+    <string name="dialog_alert_system_setting_button_1_title_2">我知道了， 稍候再完善资料</string>
+
+    <string name="tips_compare_error_1">无法进行估算， 因为系统参数设置不完整</string>
+    <string name="tips_compare_error_2">无法进行估算， 因为参照物或图片比对的数据不完整</string>
+
+    <string name="menu_compare_activity_home">返回主页面</string>
+    <string name="menu_compare_activity_save">保存本次测量资料</string>
+    <string name="menu_compare_activity_save_base">保存至本地的参照物资料库</string>
+    <string name="menu_compare_activity_save_cloud">上传至云端的参照物资料库</string>
+
+
+</resources>

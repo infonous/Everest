@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#fff2f2f2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ourcause.everest.activity.SettingActivity"
+    tools:showIn="@layout/activity_setting">
+
+    <!-- 例子 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_10">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab_setting_other"
+            style="@style/TextViewStyle_Section_Context_Tips_2"
+            android:textColor="#4ec83b"/>
+    </LinearLayout>
+
+    <!-- CCD/CMOS 长宽比例 -->
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_setting_pattern"
+            style="@style/TextViewStyle_Section_Title" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/lab_setting_pattern_rate"
+            style="@style/TextViewStyle_Section_Context_Label" />
+        <EditText
+            android:id="@+id/edt_pattern_length"
+            android:labelFor="@+id/edt_pattern_length"
+            android:inputType="number"
+            style="@style/EditTextStyle_Section_Context_By_Right" />
+        <TextView
+            android:text="@string/lab_setting_rate_space"
+            style="@style/TextViewStyle_Section_Context_Fixed_Label" />
+        <EditText
+            android:id="@+id/edt_pattern_width"
+            android:labelFor="@+id/edt_pattern_width"
+            android:inputType="number"
+            style="@style/EditTextStyle_Section_Context_By_Right" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/lab_setting_pattern_rate_tips"
+            style="@style/TextViewStyle_Section_Context_Tips_1" />
+    </LinearLayout>
+
+    <!-- 对角线尺寸设置 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/activity_margin_5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_setting_diagonal_line"
+            style="@style/TextViewStyle_Section_Title" />
+        <CheckBox
+            android:id="@+id/chk_diagonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab_setting_choice" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/lab_setting_diagonal_line"
+            style="@style/TextViewStyle_Section_Context_Label" />
+        <EditText
+            android:id="@+id/edt_diagonal_line_numerator"
+            android:labelFor="@+id/edt_diagonal_line_numerator"
+            android:inputType="number"
+            style="@style/EditTextStyle_Section_Context_By_Right" />
+        <TextView
+            android:text="@string/lab_setting_rate_space"
+            style="@style/TextViewStyle_Section_Context_Fixed_Label" />
+        <EditText
+            android:id="@+id/edt_diagonal_line_denominator"
+            android:labelFor="@+id/edt_diagonal_line_denominator"
+            android:inputType="numberDecimal"
+            style="@style/EditTextStyle_Section_Context_By_Right" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/lab_setting_diagonal_line_count"
+            android:textColor="#4ec83b"
+            android:textSize="14sp"
+            style="@style/TextViewStyle_Section_Context_Tips_2" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lab_setting_diagonal_line_count_length"
+            android:text="@string/lab_result_integer"
+            style="@style/TextViewStyle_Section_Context_Obvious_1" />
+        <TextView
+            android:text="@string/lab_setting_rate_space"
+            style="@style/TextViewStyle_Section_Context_Fixed_Label" />
+        <TextView
+            android:id="@+id/lab_setting_diagonal_line_count_width"
+            android:text="@string/lab_result_integer"
+            style="@style/TextViewStyle_Section_Context_Obvious_1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/lab_setting_diagonal_line_tips"
+            style="@style/TextViewStyle_Section_Context_Tips_1" />
+    </LinearLayout>
+
+    <!-- 光学像素点大小 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/activity_margin_5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_setting_pixel"
+            style="@style/TextViewStyle_Section_Title" />
+        <CheckBox
+            android:id="@+id/chk_pixel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab_setting_choice" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/tab_setting_pixel_length"
+            style="@style/TextViewStyle_Section_Context_Label" />
+        <EditText
+            android:id="@+id/edt_pixel_length"
+            android:labelFor="@+id/edt_pixel_length"
+            android:inputType="numberDecimal"
+            style="@style/EditTextStyle_Section_Context_By_Right" />
+        <TextView
+            android:text="@string/tab_setting_pixel_width"
+            style="@style/TextViewStyle_Section_Context_Label" />
+        <EditText
+            android:id="@+id/edt_pixel_width"
+            android:labelFor="@+id/edt_pixel_width"
+            android:inputType="numberDecimal"
+            style="@style/EditTextStyle_Section_Context_By_Right" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/lab_setting_pixel_tips"
+            style="@style/TextViewStyle_Section_Context_Tips_1" />
+    </LinearLayout>
+
+
+    <!-- 校正因子 -->
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_setting_factor"
+            style="@style/TextViewStyle_Section_Title" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/lab_setting_factor_value"
+            style="@style/TextViewStyle_Section_Context_Label" />
+        <EditText
+            android:id="@+id/edt_factor_value"
+            android:labelFor="@+id/edt_factor_value"
+            android:inputType="numberDecimal"
+            style="@style/EditTextStyle_Section_Context_By_Right" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/lab_setting_factor_tips"
+            style="@style/TextViewStyle_Section_Context_Tips_1" />
+    </LinearLayout>
+
+</LinearLayout>

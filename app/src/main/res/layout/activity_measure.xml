@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.MeasureActivity">
+
+    <ImageView
+        android:contentDescription="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewTarget"
+        android:src="@drawable/welcome"
+        android:scaleType="center"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/fullscreen_content_controls"
+        android:background="#ffffff"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            style="@style/TextViewStyle_Section_Context_Label"
+            android:text="@string/lab_height"
+            android:id="@+id/labVisualHigh"/>
+
+        <EditText
+            style="@style/EditTextStyle_Section_Context_By_Right"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/edtVisualHigh"
+            android:id="@+id/edtVisualHigh"/>
+
+        <TextView
+            style="@style/TextViewStyle_Section_Context_Label"
+            android:text="@string/lab_width"
+            android:id="@+id/labVisualWide"/>
+
+        <EditText
+            style="@style/EditTextStyle_Section_Context_By_Right"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/edtVisualWidth"
+            android:id="@+id/edtVisualWidth"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:contentDescription="@null"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/confirm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMeasure"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal">
+    </LinearLayout>
+
+</FrameLayout>
